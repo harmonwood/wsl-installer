@@ -1,8 +1,7 @@
 ## Install
 
 * Open Powershell using `Run As Adminstrator`
-* Download script via `Invoke-WebRequest -Uri https://raw.githubusercontent.com/harmonwood/wsl-installer/master/src/install.ps1 -OutFile .\install.ps1 -UseBasicParsing`
-* Invoke with `powershell -ExecutionPolicy ByPass -File .\install.ps1`
+* Execute: `Set-ExecutionPolicy Bypass -Scope Process -Force; iex ((New-Object System.Net.WebClient).DownloadString('https://raw.githubusercontent.com/harmonwood/wsl-installer/master/src/install.ps1'))`
 * Reboot when requested
 * ReInvoke script after first reboot
 
